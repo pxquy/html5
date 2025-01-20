@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phùng Quí Mobile</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+    integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <section class="top-heading">
+      <div class="slide-deal-header">
+        <div class="deal-header header-top-intro">
+          <div>
+            <a tabindex="-1">
+              <ion-icon name="checkmark-circle-outline"></ion-icon>
+              <span>SẢN PHẨM CHÍNH HÃNG</span>
+            </a>
+          </div>
+          <div>
+            <a href="/chinh-sach-bao-hanh" tabindex="-1">
+              <ion-icon name="sync-circle-outline"></ion-icon>
+              <span>CAM KẾT LỖI ĐỔI LIỀN (*)</span>
+            </a>
+          </div>
+          <div>
+            <a tabindex="-1">
+              <ion-icon name="call-outline"></ion-icon>
+              <span>HOTLINE 1900.2091</span>
+            </a>
+          </div>
+          <div>
+            <a tabindex="-1">
+              <ion-icon name="cube-outline"></ion-icon>
+              <span>MIỄN PHÍ VẬN CHUYỂN TOÀN QUỐC</span>
+            </a>
+          </div>
+        </div>
+        <a href="#" class="deal-header header-top-sales">
+          <div>
+            <ion-icon name="link-outline"></ion-icon>
+            <span> Thu cũ giá cao toàn bộ sản phẩm</span>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="w-container">
+      <div class="logo-search-user">
+        <div class="logo">
+          <a href="/">
+            <img src="./images/logo.png" alt="">
+          </a>
+        </div>
+
+        <div class="search">
+          <div class="search-box">
+            <form method="get" action="/tim-kiem">
+              <div class="search-bg">
+                <input id="kwd" name="kwd" type="text" placeholder="Hôm nay bạn muốn tìm kiếm gì?" autocomplete="off">
+                <button type="submit">
+                  <ion-icon name="search-outline"></ion-icon>
+                  <span>Tìm kiếm</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="quick-for-user">
+          <a class="shop-location text-link" href="#">
+            <ion-icon name="location-outline"></ion-icon>
+            <span>Tìm siêu thị</span>
+          </a>
+
+          <a class="user text-link" href="#">
+            <ion-icon name="person-outline"></ion-icon>
+            <span>Tài khoản</span>
+          </a>
+
+          <a class="cart text-link" href="#">
+            <ion-icon name="bag-outline"></ion-icon>
+            <label class="cart-counter" id="cart-total">0</label>
+          </a>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main>
+    <section class="products">
+      <nav>
+        <section class="nav_menu">
+          <ul>
+            <span>Danh mục</span>
+            <li>
+              <a href="">
+                <img src="images/categories/dienthoai.png" alt="Điện thoại" />
+                <span>Điện thoại</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="images/categories/apple.png" alt="Apple" />
+                <span>Apple</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="images/categories/laptop.png" alt="Laptop image" />
+                <span>Laptop</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="images/categories/tablet.png" alt="Tablet image" />
+                <span>Tablet</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="images/categories/manhinh.png" alt="Màn hình image" />
+                <span>Màn hình</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="images/categories/tulanh.png" alt="Điện máy image" />
+                <span>Điện máy</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="images/categories/dongho.png" alt="Đồng hồ image" />
+                <span>Đông hồ</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="images/categories/wifi.png" alt="Phụ kiện image" />
+                <span>Phụ kiện</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="images/categories/logo-sua-chua.png" alt="Sửa chữa image" />
+                <span>Sửa chữa</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="images/categories/logo-dich-vu.png" alt="Dịch vụ image" />
+                <span>Dịch vụ</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="images/categories/logo-tin-hot.png" alt="Tn hót image" />
+                <span>Tin hót</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </nav>
+      <article>
+        <section class="article_product">
+          <div class="product_image">
+            <img src="images/products/paner1.jpg" alt="image1" />
+            <img src="images/products/paner2.jpg" alt="image2" />
+            <img src="images/products/paner3.jpg" alt="image3" />
+            <img src="images/products/paner4.jpg" alt="image4" />
+            <img src="images/products/paner5.jpg" alt="image5" />
+            <img src="images/products/paner6.jpg" alt="image6" />
+          </div>
+          <button id="next">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+          </button>
+          <button id="prev">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </button>
+        </section>
+        <section class="article_products">
+          <div class="product_one">
+            <div class="inside_one">
+              <div class="endow_product">
+                <ion-icon name="gift-outline"></ion-icon>
+                <span>-5% và 13 ưu đãi cho sản phẩm</span>
+              </div>
+              <div class="image_product">
+                <img src="images/products/Laptop1.png" alt="Laptop" />
+              </div>
+              <div class="name_product">
+                <p>Laptop LG Gram 2024 14Z9OS-G.AH75A5</p>
+              </div>
+              <div class="price_product">
+                <p>29,990,000 <u>đ</u></p>
+                <del>41,390,000 <u>đ</u></del>
+              </div>
+              <div class="note_product">
+                <p>Giá lên đời chỉ từ 26,990,000 <u>đ</u></p>
+              </div>
+              <div class="cart">
+                <a href=""><ion-icon name="cart-outline"></ion-icon>Thêm vào giỏ hàng</a>
+              </div>
+            </div>
+            <div class="inside_one">
+              <div class="endow_product">
+                <ion-icon name="gift-outline"></ion-icon>
+                <span>-5% và 13 ưu đãi cho sản phẩm</span>
+              </div>
+              <div class="image_product">
+                <img src="images/products/Laptop2t.png" alt="Laptop" />
+              </div>
+              <div class="name_product">
+                <p>Laptop Dell XPS 14 9440(71034921)-Chính hãng</p>
+              </div>
+              <div class="price_product">
+                <p>74,990,000 <u>đ</u></p>
+                <del>79,990,000 <u>đ</u></del>
+              </div>
+              <div class="note_product">
+                <p>Giá lên đời chỉ từ 71,490,000 <u>đ</u></p>
+              </div>
+              <div class="cart">
+                <a href=""><ion-icon name="cart-outline"></ion-icon>Thêm vào giỏ hàng</a>
+              </div>
+            </div>
+            <div class="inside_one">
+              <div class="endow_product">
+                <ion-icon name="gift-outline"></ion-icon>
+                <span>-5% và 12 ưu đãi cho sản phẩm</span>
+              </div>
+              <div class="image_product">
+                <img src="images/products/Laptop3.png" alt="Laptop" />
+              </div>
+              <div class="name_product">
+                <p>Laptop Dell XPS 13 9340(71034922)-Chính hãng</p>
+              </div>
+              <div class="price_product">
+                <p>49,990,000 <u>đ</u></p>
+                <del>52,900,000 <u>đ</u></del>
+              </div>
+              <div class="note_product">
+                <p>Giá lên đời chỉ từ 49,990,000 <u>đ</u></p>
+              </div>
+              <div class="cart">
+                <a href=""><ion-icon name="cart-outline"></ion-icon>Thêm vào giỏ hàng</a>
+              </div>
+            </div>
+            <div class="inside_one">
+              <div class="endow_product">
+                <ion-icon name="gift-outline"></ion-icon>
+                <span>-5% và 16 ưu đãi cho sản phẩm</span>
+              </div>
+              <div class="image_product">
+                <img src="images/products/Laptop4.png" alt="Laptop" />
+              </div>
+              <div class="name_product">
+                <p>Laptop Gaming Lenovo LOQ 15ARP9 83JCOO3YVN</p>
+              </div>
+              <div class="price_product">
+                <p>29,090,000 <u>đ</u></p>
+                <del>31,490,000 <u>đ</u></del>
+              </div>
+              <div class="note_product">
+                <p>Giá lên đời chỉ từ 26,000,000 <u>đ</u></p>
+              </div>
+              <div class="cart">
+                <a href=""><ion-icon name="cart-outline"></ion-icon>Thêm vào giỏ hàng</a>
+              </div>
+            </div>
+          </div>
+          <div class="product_two">
+            <div class="inside_one">
+              <div class="endow_product">
+                <ion-icon name="gift-outline"></ion-icon>
+                <span>-5% và 12 ưu đãi cho sản phẩm</span>
+              </div>
+              <div class="image_product">
+                <img src="images/products/phone15.webp" alt="Laptop" />
+              </div>
+              <div class="name_product">
+                <p>Iphone 15 Plus 128GB-Chính hãng VN/A</p>
+              </div>
+              <div class="price_product">
+                <p>21,990,000 <u>đ</u></p>
+                <del>23,990,000 <u>đ</u></del>
+              </div>
+              <div class="note_product">
+                <p>Giá lên đời chỉ từ 20,490,000 <u>đ</u></p>
+              </div>
+              <div class="cart">
+                <a href=""><ion-icon name="cart-outline"></ion-icon>Thêm vào giỏ hàng</a>
+              </div>
+            </div>
+            <div class="inside_one">
+              <div class="endow_product">
+                <ion-icon name="gift-outline"></ion-icon>
+                <span>-5% và 14 ưu đãi cho sản phẩm</span>
+              </div>
+              <div class="image_product">
+                <img src="images/products/phone1.webp" alt="Laptop" />
+              </div>
+              <div class="name_product">
+                <p>REDMAGIC 10 Pro 12G/256GB-Bản Quốc tế chính hãng</p>
+              </div>
+              <div class="price_product">
+                <p>17,990,000 <u>đ</u></p>
+                <del>21,990,000 <u>đ</u></del>
+              </div>
+              <div class="note_product">
+                <p>Giá lên đời chỉ từ 16,990,000 <u>đ</u></p>
+              </div>
+              <div class="cart">
+                <a href=""><ion-icon name="cart-outline"></ion-icon>Thêm vào giỏ hàng</a>
+              </div>
+            </div>
+            <div class="inside_one">
+              <div class="endow_product">
+                <ion-icon name="gift-outline"></ion-icon>
+                <span>-5% và 10 ưu đãi cho sản phẩm</span>
+              </div>
+              <div class="image_product">
+                <img src="images/products/phone2.webp" alt="Laptop" />
+              </div>
+              <div class="name_product">
+                <p>REDMAGIC Nova Gaming Taplet 12G/256GB</p>
+              </div>
+              <div class="price_product">
+                <p>13,990,000 <u>đ</u></p>
+                <del>17,990,000 <u>đ</u></del>
+              </div>
+              <div class="note_product">
+                <p>Hàng chính hãng chất lượng cao</p>
+              </div>
+              <div class="cart">
+                <a href=""><ion-icon name="cart-outline"></ion-icon>Thêm vào giỏ hàng</a>
+              </div>
+            </div>
+            <div class="inside_one">
+              <div class="endow_product">
+                <ion-icon name="gift-outline"></ion-icon>
+                <span>-5% và 10 ưu đãi cho sản phẩm</span>
+              </div>
+              <div class="image_product">
+                <img src="images/products/phone3.webp" alt="Laptop" />
+              </div>
+              <div class="name_product">
+                <p>NUBIA REDMAGIC 7 OPSIDIAN 12G 128GB</p>
+              </div>
+              <div class="price_product">
+                <p>12,990,000 <u>đ</u></p>
+                <del>18,990,000 <u>đ</u></del>
+              </div>
+              <div class="note_product">
+                <p>Trả góp 0% không thu phí</p>
+              </div>
+              <div class="cart">
+                <a href=""><ion-icon name="cart-outline"></ion-icon>Thêm vào giỏ hàng</a>
+              </div>
+            </div>
+          </div>
+          <div class="products_three">
+            <div class="product_three">
+              <div class="video_product">
+                <video id="myVideo" autoplay loop <source
+                  src="https://hoanghamobile.com//Uploads/2024/12/25/rm-10-pro-desktop.mp4" type="video/mp4" />
+                ></video>
+              </div>
+            </div>
+            <div class="inside_one">
+              <div class="endow_product">
+                <ion-icon name="gift-outline"></ion-icon>
+                <span>-38% và 7 ưu đãi khác cho sản phẩm</span>
+              </div>
+              <div class="image_product">
+                <img src="images/products/dongho1.png" alt="Laptop" />
+              </div>
+              <div class="name_product">
+                <p>Đồng hồ Samsung Galaxy watch 7 40mm BT(L300)</p>
+              </div>
+              <div class="price_product">
+                <p>4,950,000 <u>đ</u></p>
+                <del>7,990,000 <u>đ</u></del>
+              </div>
+              <div class="note_product">
+                <p>Trả góp 0% không thu phí</p>
+              </div>
+              <div class="cart">
+                <a href=""><ion-icon name="cart-outline"></ion-icon>Thêm vào giỏ hàng</a>
+              </div>
+            </div>
+            <div class="inside_one">
+              <div class="endow_product">
+                <ion-icon name="gift-outline"></ion-icon>
+                <span>-24% và 2 ưu đãi khác cho sản phẩm</span>
+              </div>
+              <div class="image_product">
+                <img src="images/products/phukien1.png" alt="Laptop" />
+              </div>
+              <div class="name_product">
+                <p>Tai nghe Bluetooth True Wireless JBN Ware beam-Chính hãng </p>
+              </div>
+              <div class="price_product">
+                <p>1,130,000 <u>đ</u></p>
+                <del>1,490,000 <u>đ</u></del>
+              </div>
+              <div class="note_product">
+                <p>Trúng quà lớn giảm đến 50%</p>
+              </div>
+              <div class="cart">
+                <a href=""><ion-icon name="cart-outline"></ion-icon>Thêm vào giỏ hàng</a>
+              </div>
+            </div>
+          </div>
+          <div class="product_four">
+          </div>
+          <div class="product_five"></div>
+          <footer>
+            <section class="footer_wrapper">
+              <div class="footer_box">
+                <div class="footer_box1 box">
+                  <h4>Hỗ trợ - Dịch vụ</h4>
+                  <a href="">Chính sách và hướng dẫn mua hàng trả góp</a>
+                  <a href="">Hướng dẫn mua hàng và chính sách vận chuyển</a>
+                  <a href="">Tra cứu đơn hàng</a>
+                  <a href="">Chính sách đổi mới và bảo hành</a>
+                  <a href="">Dịch vụ bảo hành mở rộng</a>
+                  <a href="">Chính sách bảo mật</a>
+                  <a href="">Chính sách giải quyết khiếu nại</a>
+                </div>
+                <div class="footer_box2 box">
+                  <h4>Thông tin dịch vụ</h4>
+                  <a href="">Thông tin các trang TMĐT</a>
+                  <a href="">Chăm sóc khách hàng</a>
+                  <a href="">Dịch vụ sửa chữa Hoàng Hà Care</a>
+                  <a href="">Khách hàng doanh nghiệp (B2B)</a>
+                  <a href="">Tuyển dụng</a>
+                  <a href="">Tra cứu bảo hành</a>
+                </div>
+                <div class="footer_box3 box">
+                  <h4>Thanh toán miễn phí</h4>
+                  <div class="image">
+                    <img src="images/footer/visa.png" alt="">
+                    <img src="images/footer/mastercard.png" alt="">
+                  </div>
+                  <div class="image">
+                    <img src="images/footer/jcb.png" alt="">
+                    <img src="images/footer/samsungpay.png" alt="">
+                  </div>
+                  <div class="image">
+                    <img src="images/footer/applepay.png" alt="">
+                    <img src="images/footer/zalopay.png" alt="">
+                  </div>
+
+                  <h4>Hình thức vận chuyển</h4>
+                  <div class="image">
+                    <img src="images/footer/nhattin.png" alt="">
+                    <img src="images/footer/vnpay.png" alt="">
+                  </div>
+                </div>
+                <div class="footer_box4 box">
+                  <p>Tổng đài</p>
+                  <p>Tổng đài</p>
+                  <p>Tổng đài</p>
+                  <p>Tổng đài</p>
+                  <p>Tổng đài</p>
+                </div>
+              </div>
+              <span>© 2020. CÔNG TY CỔ PHẦN XÂY DỰNG VÀ ĐẦU TƯ THƯƠNG MẠI HOÀNG HÀ. MST: 0106713191. (Đăng ký lần đầu:
+                Ngày 15 tháng 12 năm 2014,
+                Đăng ký thay đổi ngày 24/11/2022)</span>
+              <span>Địa chỉ: Số 89 Đường Tam Trinh, Phường Mai Động, Quận Hoàng Mai, Thành Phố Hà Nội, Việt Nam. Điện
+                thoại: 1900.2091.
+                Chịu trách nhiệm nội dung: Hoàng Minh Tâm.</span>
+            </section>
+          </footer>
+        </section>
+      </article>
+    </section>
+  </main>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
