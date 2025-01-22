@@ -820,3 +820,90 @@ main {
 /* End product */
 
 /* End article right-content */
+
+
+/* Footer */
+footer {
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+footer .bg {
+  background: var(--darkPrimary);
+  border-radius: 10px;
+  padding: 20px;
+  color: #fff;
+  width: 957px;
+  float: right;
+  margin-bottom: 12px;
+}
+footer .bg .col-content {
+  display: flex
+;
+  gap: 20px;
+}
+
+footer .bg .col-content > div {
+  flex-direction: column;
+  width: 16.6666%;
+  padding-left: 10px;
+}
+footer .bg .col-content h4 {
+  font-size: 15px;
+  margin: 10px 0 6px 0;
+}
+footer .bg .col-content > div {
+  width: 25%;
+}
+footer .bg a, footer .bg a:link, footer .bg a:visited {
+  color: #ddd;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer .bg ul li {
+  margin-bottom: 8px;
+}
+
+footer .bg ul.list-logo li img {
+  margin-right: 3px;
+}
+
+footer .bg .hotline {
+  display: inline-block;
+  padding: 6px 10px;
+  background: #fff;
+  border-radius: 4px;
+  margin-bottom: 10px !important;
+}
+
+footer .bg a.hotline, footer .bg a.hotline:link, footer .bg a.hotline:visited {
+  color: var(--darkPrimary);
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+footer .bg a.hotline:hover {
+  color: white;
+  background-color: var(--darkPrimary);
+}
+
+
+footer .bg .footer-social-item img {
+  width: 30px;
+  height: 30px;
+}
+
+footer .info {
+  padding-top: 27px;
+  text-align: center;
+}
+
+footer .info p {
+  margin: 0 0 5px 0;
+  font-size: 9pt;
+}
+/* End footer */

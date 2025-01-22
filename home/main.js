@@ -112,3 +112,11 @@ imageSlick = function (imagePreviewSelector, imageThumbSelector) {
     //     });
     // }
 }
+
+// Thay đổi ảnh khi hover vào ảnh mạng xã hội
+function changesrc(src) {
+    var source = $(src).attr("src");
+    if (source.endsWith("active.png")) source = source.replace("_active.png", ".png")
+    else source = source.replace(".png", "_active.png")
+    $(src).attr("src", source);
+  }
