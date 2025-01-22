@@ -33,32 +33,32 @@
   z-index: 99999999;
 }
 
-  .f1-effect .f1-effect-flower {
-      opacity: 1;
-      border-radius: 100%;
-      background: url(https://file.hstatic.net/200000259653/file/pages_17a8568517e94dcd9c8aec5587_570924d1fa4b4da1aa011044c9d7cc1c.png);
-      position: fixed;
-      top: -10%;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      cursor: default;
-      -webkit-animation-name: snowflakes-fall, snowflakes-shake;
-      -webkit-animation-duration: 10s, 3s;
-      -webkit-animation-timing-function: linear, ease-in-out;
-      -webkit-animation-iteration-count: infinite, infinite;
-      -webkit-animation-play-state: running, running;
-      animation-name: snowflakes-fall, snowflakes-shake;
-      animation-duration: 10s, 3s;
-      animation-timing-function: linear, ease-in-out;
-      animation-iteration-count: infinite, infinite;
-      animation-play-state: running, running;
-  }
+.f1-effect .f1-effect-flower {
+  opacity: 1;
+  border-radius: 100%;
+  background: url(https://file.hstatic.net/200000259653/file/pages_17a8568517e94dcd9c8aec5587_570924d1fa4b4da1aa011044c9d7cc1c.png);
+  position: fixed;
+  top: -10%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  -webkit-animation-name: snowflakes-fall, snowflakes-shake;
+  -webkit-animation-duration: 10s, 3s;
+  -webkit-animation-timing-function: linear, ease-in-out;
+  -webkit-animation-iteration-count: infinite, infinite;
+  -webkit-animation-play-state: running, running;
+  animation-name: snowflakes-fall, snowflakes-shake;
+  animation-duration: 10s, 3s;
+  animation-timing-function: linear, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+  animation-play-state: running, running;
+}
 
 @media (max-width: 767px) {
   .f1-effect .f1-effect-flower:nth-of-type(2n) {
-      display: none;
+    display: none;
   }
 }
 
@@ -163,58 +163,58 @@
 
 @-webkit-keyframes snowflakes-fall {
   0% {
-      top: -10%;
+    top: -10%;
   }
 
   100% {
-      top: 100%;
+    top: 100%;
   }
 }
 
 @-webkit-keyframes snowflakes-shake {
   0% {
-      -webkit-transform: translateX(0px);
-      transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
   }
 
   50% {
-      -webkit-transform: translateX(80px);
-      transform: translateX(80px);
+    -webkit-transform: translateX(80px);
+    transform: translateX(80px);
   }
 
   100% {
-      -webkit-transform: translateX(0px);
-      transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
   }
 }
 
 @keyframes snowflakes-fall {
   0% {
-      top: -10%;
+    top: -10%;
   }
 
   100% {
-      top: 100%;
+    top: 100%;
   }
 }
 
 @keyframes snowflakes-shake {
   0% {
-      transform: translateX(0px);
+    transform: translateX(0px);
   }
 
   50% {
-      transform: translateX(80px);
+    transform: translateX(80px);
   }
 
   100% {
-      transform: translateX(0px);
+    transform: translateX(0px);
   }
 }
 
 /* end hiệu ứng hoa rơi */
 html {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
   font-size: 1em;
 }
 
@@ -236,6 +236,14 @@ a {
   width: 1200px;
   min-width: 1200px;
   margin: 0 auto;
+}
+
+.container {
+  border-radius: 10px;
+  background: #fff;
+  padding: 12px;
+  margin-bottom: 12px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 /* end common */
@@ -511,7 +519,7 @@ main {
 }
 
 .nav-full nav h2 {
-  font-size: 13px;
+  font-size: 15px;
   padding: 0px 20px 12px 20px;
   margin: 0;
 }
@@ -546,6 +554,7 @@ main {
 .nav-full nav ul li > a span {
   padding: 6px 0;
   font-size: 13px;
+  font-weight: 600;
   color: var(--blackText);
 }
 
@@ -556,14 +565,7 @@ main {
   width: 958px;
 }
 
-.main-slider {
-  border-radius: 10px;
-  background: #fff;
-  padding: 12px;
-  margin-bottom: 12px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
+/* main slider */
 .top-slider {
   background: #fff;
   border-radius: 10px;
@@ -647,5 +649,174 @@ main {
 .slick-dots li.slick-active button {
   background-color: var(--lightPrimary);
 }
+/* End main slider */
+
+/* product */
+.product .title {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.v5-list {
+  display: flex;
+  margin: 12px 0;
+  font-family: var(--fontFamily);
+  font-optical-sizing: auto;
+}
+
+.v5-list .v5-list-items {
+  flex-grow: 3;
+}
+
+.v5-list .v5-list-container {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.v5-list .v5-grid-items {
+  display: grid;
+  grid-gap: 12px;
+  margin-bottom: 15px;
+}
+
+.v5-list .v5-list-items .v5-item {
+  background: #fff;
+  border-radius: 6px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  justify-items: start;
+  border: 1px solid #ededed;
+}
+
+.v5-list .v5-list-items .v5-item {
+  position: relative;
+}
+
+.v5-item video {
+  border-radius: 5px;
+}
+
+/* Product Item */
+/* Sale */
+.sale-sticker {
+  top: 6px;
+  position: absolute;
+  background: url(/Content/web/img/sticker-sale.png);
+  color: #fff;
+  font-size: 13px;
+  left: -5px;
+  height: 35px;
+  width: 90px;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+}
+.sale-sticker span {
+  margin-top: 7px;
+}
+/* End sale */
+
+.left-sticker {
+  position: absolute;
+  width: 85px;
+  top: 6px;
+  right: 12px;
+  font-size: 11px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid var(--lightPrimary);
+  color: var(--lightPrimary);
+  text-align: center;
+}
+
+/* Image */
+.v5-list .v5-list-items .v5-item a.img {
+  display: block;
+  margin: 0 auto;
+}
+.v5-list .v5-list-items .v5-item a.img img {
+  max-width: 100%;
+}
+/* End Image */
+
+/* Name */
+.v5-list .v5-list-items .v5-item h3 {
+  padding: 0;
+  margin: 12px 0 12px 0;
+  font-size: 15px;
+  flex-grow: 5;
+  text-align: center;
+}
+.v5-list .v5-list-items .v5-item h3 a {
+  color: var(--blackText);
+  font-size: 15px;
+  font-weight: 600;
+}
+/* End Name */
+
+/* Price */
+.v5-list .v5-list-items .v5-item .price {
+  margin-bottom: 12px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  justify-items: stretch;
+}
+.v5-list .v5-list-items .v5-item .price strong {
+  color: var(--redText);
+  line-height: 18px;
+  padding-right: 10px;
+  font-size: 15px;
+}
+.v5-list .v5-list-items .v5-item .price strike {
+  font-size: 11px;
+  line-height: 18px;
+  color: #c9c9c9;
+  font-size: 15px;
+}
+/* End price */
+
+/* promotion */
+.v5-item .promotion-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.v5-item .promotion-list > div {
+  display: flex;
+  height: 24px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+.v5-item .promotion-list > div label {
+  background: #ffdfd4;
+  padding: 2px 6px;
+  color: #fc521d;
+  border-radius: 3px;
+  font-weight: 800;
+  margin-right: 5px;
+  font-size: 11px;
+  line-height: 19px;
+}
+.v5-item .promotion-list > div span {
+  line-height: 24px;
+  font-size: 13px;
+}
+.v5-item .promotion-list > div.more {
+  text-align: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fc521d;
+  margin-bottom: 0;
+}
+/* End promotion */
+/* End product item */
+/* End product */
 
 /* End article right-content */
