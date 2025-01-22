@@ -119,4 +119,24 @@ function changesrc(src) {
     if (source.endsWith("active.png")) source = source.replace("_active.png", ".png")
     else source = source.replace(".png", "_active.png")
     $(src).attr("src", source);
-  }
+}
+
+// Hàm bật tắt nhạc
+function toggleMusic() {
+    const audio = document.getElementById('myAudio');
+    const musicPlayEl = document.querySelector('.music-player');
+    const button = document.getElementById('playButton');
+    const isPlaying = !audio.paused;
+
+    if (isPlaying) {
+    // Nếu đang phát, tạm dừng nhạc và đổi nút thành "Phát nhạc"
+    audio.pause();
+    musicPlayEl.classList.remove('active');
+    button.innerHTML = '<ion-icon name="volume-high-outline"></ion-icon> <span>Phát nhạc</span>';
+    } else {
+    // Nếu đang dừng, phát nhạc và đổi nút thành "Tắt nhạc"
+    audio.play();
+    musicPlayEl.classList.add('active');
+    button.innerHTML = '<ion-icon name="volume-mute-outline"></ion-icon> <span>Tắt nhạc</span>';
+    }
+}

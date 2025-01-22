@@ -219,7 +219,7 @@ html {
 }
 
 body {
-  background-image: url(images/template-nen.jpg);
+  background-image: url(assets/images/template-nen.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   backdrop-filter: inherit;
@@ -431,7 +431,13 @@ header .quick-for-user {
   justify-content: flex-end;
 }
 
-header .shop-location,
+header .music-player {
+  width: 140px;
+}
+
+
+
+header .music-player,
 header .user {
   display: flex;
   padding: 8px 10px;
@@ -443,8 +449,9 @@ header .user {
   justify-content: center;
 }
 
-header .shop-location:hover,
-header .user:hover {
+header .music-player:hover,
+header .user:hover,
+header .music-player.active {
   background: var(--lightPrimaryHover);
 }
 

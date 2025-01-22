@@ -7,10 +7,10 @@
   <title>Phùng Quí Mobile</title>
 
   <!-- icon của trang web nó ở gần title của trang -->
-  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="./images/favicon/site.webmanifest" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="./assets/images/favicon/site.webmanifest" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
     integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
@@ -22,6 +22,12 @@
 </head>
 
 <body>
+  <!-- Trình phát nhạc -->
+  <audio autoplay loop id="myAudio">
+    <source src="./assets/audio/NgayXuanLongPhungSumVay_PhienBan2CuRenSat_HungHack_NhacRemixTetTikTok2022.mp3"
+      type="audio/mpeg">
+    Trình duyệt của bạn không hỗ trợ phát nhạc.
+  </audio>
   <div class="f1-effect">
     <div class="f1-effect-flower"></div>
     <div class="f1-effect-flower"></div>
@@ -75,7 +81,7 @@
       <div class="logo-search-user">
         <div class="logo">
           <a href="/">
-            <img src="./images/logo.png" alt="" />
+            <img src="./assets/images/logo.png" alt="" />
           </a>
         </div>
 
@@ -94,9 +100,8 @@
         </div>
 
         <div class="quick-for-user">
-          <a class="shop-location text-link" href="#">
-            <ion-icon name="location-outline"></ion-icon>
-            <span>Tìm siêu thị</span>
+          <a class="music-player text-link" href="#" id="playButton" onclick="toggleMusic()">
+            <ion-icon name="volume-high-outline"></ion-icon> <span>Phát nhạc</span> 
           </a>
 
           <a class="user text-link" href="#">
@@ -119,85 +124,85 @@
         <ul class="root">
           <li id="dien-thoai-di-dong">
             <a href="#">
-              <label><img src="./images/categories/dienthoai.png" alt="Điện thoại" /></label>
+              <label><img src="./assets/images/categories/dienthoai.png" alt="Điện thoại" /></label>
               <span> Điện thoại </span>
             </a>
           </li>
           <li id="tet-tao-bao-gia-apple">
             <a href="#">
-              <label><img src="./images/categories/apple.png" alt="Apple" /></label>
+              <label><img src="./assets/images/categories/apple.png" alt="Apple" /></label>
               <span> Apple </span>
             </a>
           </li>
           <li id="laptop">
             <a href="#">
-              <label><img src="./images/categories/laptop.png" alt="Laptop" /></label>
+              <label><img src="./assets/images/categories/laptop.png" alt="Laptop" /></label>
               <span> Laptop </span>
             </a>
           </li>
           <li id="tablet">
             <a href="#">
-              <label><img src="./images/categories/tablet.png" alt="Tablet" /></label>
+              <label><img src="./assets/images/categories/tablet.png" alt="Tablet" /></label>
               <span> Tablet </span>
             </a>
           </li>
           <li id="man-hinh">
             <a href="#">
-              <label><img src="./images/categories/manhinh.png" alt="Màn hình" /></label>
+              <label><img src="./assets/images/categories/manhinh.png" alt="Màn hình" /></label>
               <span> Màn hình </span>
             </a>
           </li>
           <li id="dien-may">
             <a href="#">
-              <label><img src="./images/categories/tulanh.png" alt="Điện máy" /></label>
+              <label><img src="./assets/images/categories/tulanh.png" alt="Điện máy" /></label>
               <span> Điện máy </span>
             </a>
           </li>
           <li id="dong-ho">
             <a href="#">
-              <label><img src="./images/categories/dongho.png" alt="Đồng hồ" /></label>
+              <label><img src="./assets/images/categories/dongho.png" alt="Đồng hồ" /></label>
               <span> Đồng hồ </span>
             </a>
           </li>
           <li id="loa-tai-nghe">
             <a href="#">
-              <label><img src="./images/categories/loa.png" alt="Âm thanh" /></label>
+              <label><img src="./assets/images/categories/loa.png" alt="Âm thanh" /></label>
               <span> Âm thanh </span>
             </a>
           </li>
           <li id="smart-home">
             <a href="#">
-              <label><img src="./images/categories/mayhutbui.png" alt="Smart home" /></label>
+              <label><img src="./assets/images/categories/mayhutbui.png" alt="Smart home" /></label>
               <span> Smart home </span>
             </a>
           </li>
           <li id="phu-kien">
             <a href="#">
-              <label><img src="./images/categories/wifi.png" alt="Phụ kiện" /></label>
+              <label><img src="./assets/images/categories/wifi.png" alt="Phụ kiện" /></label>
               <span> Phụ kiện </span>
             </a>
           </li>
           <li id="dich-vu-sua-chua">
             <a href="#">
-              <label><img src="./images/categories/logo-sua-chua.png" alt="Sửa chữa" /></label>
+              <label><img src="./assets/images/categories/logo-sua-chua.png" alt="Sửa chữa" /></label>
               <span> Sửa chữa </span>
             </a>
           </li>
           <li id="dich-vu">
             <a href="#">
-              <label><img src="./images/categories/logo-dich-vu.png" alt="Dịch vụ" /></label>
+              <label><img src="./assets/images/categories/logo-dich-vu.png" alt="Dịch vụ" /></label>
               <span> Dịch vụ </span>
             </a>
           </li>
           <li id="tin-tuc">
             <a href="/tin-tuc">
-              <label><img src="./images/categories/logo-tin-hot.png" alt="Tin hot" /></label>
+              <label><img src="./assets/images/categories/logo-tin-hot.png" alt="Tin hot" /></label>
               <span> Tin hot </span>
             </a>
           </li>
           <li id="tin-khuyen-maiuu-dai-hot">
             <a href="#">
-              <label><img src="./images/categories/logo-uu-dai.png" alt="Ưu đãi" /></label>
+              <label><img src="./assets/images/categories/logo-uu-dai.png" alt="Ưu đãi" /></label>
               <span> Ưu đãi </span>
             </a>
           </li>
@@ -209,52 +214,56 @@
         <div class="top-slider">
           <div class="top-slider-content">
             <a href="#" title="Xiaomi Redmi 14C">
-              <img style="width: 100%" src="./images/slider/banner-tet-14c-w.png" title="Xiaomi Redmi 14C" />
+              <img style="width: 100%" src="./assets/images/slider/banner-tet-14c-w.png" title="Xiaomi Redmi 14C" />
             </a>
             <a href="#" title="Ra mắt galaxy mới">
-              <img style="width: 100%" src="./images/slider/web-1.jpg" title="Ra mắt galaxy mới" />
+              <img style="width: 100%" src="./assets/images/slider/web-1.jpg" title="Ra mắt galaxy mới" />
             </a>
             <a href="#" title="Tết ông táo">
-              <img style="width: 100%" src="./images/slider/tet-tao-apple-1200x375-1.png" title="Tết ông táo" />
+              <img style="width: 100%" src="./assets/images/slider/tet-tao-apple-1200x375-1.png" title="Tết ông táo" />
             </a>
             <a href="#" title="Redmi Note 14 Series - Tạo tác AI">
-              <img style="width: 100%" src="./images/slider/promotion-kv-redmi-note-14-series.png"
+              <img style="width: 100%" src="./assets/images/slider/promotion-kv-redmi-note-14-series.png"
                 title="Redmi Note 14 Series - Tạo tác AI" />
             </a>
             <a href="#" title="Tết cùng Hà">
-              <img style="width: 100%" src="./images/slider/tet-cung-ha-1-web.jpg" title="Tết cùng Hà" />
+              <img style="width: 100%" src="./assets/images/slider/tet-cung-ha-1-web.jpg" title="Tết cùng Hà" />
             </a>
             <a href="#" title="OPPO Reno 13 F">
-              <img style="width: 100%" src="./images/slider/web-oppo-reno-01.jpg" title="OPPO Reno 13 F" />
+              <img style="width: 100%" src="./assets/images/slider/web-oppo-reno-01.jpg" title="OPPO Reno 13 F" />
             </a>
             <a href="#" title="Ưu đãi tết Samsung Galaxy S24 Ultra">
-              <img style="width: 100%" src="./images/slider/s24-web.png" title="Ưu đãi tết Samsung Galaxy S24 Ultra" />
+              <img style="width: 100%" src="./assets/images/slider/s24-web.png"
+                title="Ưu đãi tết Samsung Galaxy S24 Ultra" />
             </a>
             <a href="#" title="REDMAGIC 10 PRO">
-              <img style="width: 100%" src="./images/slider/redmagic-10-pro-desktop-1.png" title="REDMAGIC 10 PRO" />
+              <img style="width: 100%" src="./assets/images/slider/redmagic-10-pro-desktop-1.png"
+                title="REDMAGIC 10 PRO" />
             </a>
             <a href="#" title="HONOR X5b">
-              <img style="width: 100%" src="./images/slider/honor-x5b-1200x375.jpg" title="HONOR X5b" />
+              <img style="width: 100%" src="./assets/images/slider/honor-x5b-1200x375.jpg" title="HONOR X5b" />
             </a>
             <a href="#" title="Năm mới sung túc">
-              <img style="width: 100%" src="./images/slider/tuf-hoang-ha-1200x375.jpg" title="Năm mới sung túc" />
+              <img style="width: 100%" src="./assets/images/slider/tuf-hoang-ha-1200x375.jpg"
+                title="Năm mới sung túc" />
             </a>
             <a href="#" title="Huawei MatePad Pro">
-              <img style="width: 100%" src="./images/slider/matepad-pro-1200x375-1.jpg" title="Huawei MatePad Pro" />
+              <img style="width: 100%" src="./assets/images/slider/matepad-pro-1200x375-1.jpg"
+                title="Huawei MatePad Pro" />
             </a>
             <a href="#" title="Khám phá điện máy ">
-              <img style="width: 100%" src="./images/slider/1200x375-dien-may-tet-271224.jpg"
+              <img style="width: 100%" src="./assets/images/slider/1200x375-dien-may-tet-271224.jpg"
                 title="Khám phá điện máy " />
             </a>
             <a href="#" title="Infinix HOT 50 Pro+ SERIES">
-              <img style="width: 100%" src="./images/slider/kv-infinix-hot-50-pro-web.png"
+              <img style="width: 100%" src="./assets/images/slider/kv-infinix-hot-50-pro-web.png"
                 title="Infinix HOT 50 Pro+ SERIES" />
             </a>
             <a href="#" title="Redni Buds 6 Pro">
-              <img style="width: 100%" src="./images/slider/redmi-buds-6-pro-01.jpg" title="Redni Buds 6 Pro" />
+              <img style="width: 100%" src="./assets/images/slider/redmi-buds-6-pro-01.jpg" title="Redni Buds 6 Pro" />
             </a>
             <a href="#" title="Xuân tròn lộc, Tết tròn thanh âm">
-              <img style="width: 100%" src="./images/slider/web-banner-freebuds-pro-4-01.jpg"
+              <img style="width: 100%" src="./assets/images/slider/web-banner-freebuds-pro-4-01.jpg"
                 title="Xuân tròn lộc, Tết tròn thanh âm" />
             </a>
           </div>
@@ -412,8 +421,9 @@
                       ">
                     <span class="left-sticker">Góp 0%, 0 phí </span>
                     <a title="iPhone 16 Pro Max - Chính hãng VN/A" href="#" data-id="5613" class="img">
-                      <img alt="iPhone 16 Pro Max - Chính hãng VN/A" src="./images/products/iphone-16-pro-sa-mac-1.png"
-                        id="product-img-5613" style="max-width: 180px; max-height: 180px" />
+                      <img alt="iPhone 16 Pro Max - Chính hãng VN/A"
+                        src="./assets/images/products/iphone-16-pro-sa-mac-1.png" id="product-img-5613"
+                        style="max-width: 180px; max-height: 180px" />
                       <div class="bottom-sticker-wrapper"></div>
                     </a>
                     <h3>
@@ -448,8 +458,9 @@
                       ">
                     <span class="left-sticker">Góp 0%, 0 phí </span>
                     <a title="iPhone 13 (128GB) - Chính hãng VN/A" href="#" data-id="1297" class="img">
-                      <img alt="iPhone 13 (128GB) - Chính hãng VN/A" src="./images/products/13-removebg-preview.png"
-                        id="product-img-1297" style="max-width: 180px; max-height: 180px" />
+                      <img alt="iPhone 13 (128GB) - Chính hãng VN/A"
+                        src="./assets/images/products/13-removebg-preview.png" id="product-img-1297"
+                        style="max-width: 180px; max-height: 180px" />
                       <div class="bottom-sticker-wrapper"></div>
                     </a>
                     <h3>
@@ -484,7 +495,7 @@
                     <span class="sale-sticker"><span>Giảm 13 %</span></span><span class="left-sticker">Góp 0%, 0 phí
                     </span>
                     <a title='MacBook Air M1 13" (8GB/256GB)' href="#" data-id="831" class="img">
-                      <img alt='MacBook Air M1 13" (8GB/256GB)' src="./images/products/macbook-air-m1-silver.png"
+                      <img alt='MacBook Air M1 13" (8GB/256GB)' src="./assets/images/products/macbook-air-m1-silver.png"
                         id="product-img-831" style="max-width: 180px; max-height: 180px" />
                       <div class="bottom-sticker-wrapper"></div>
                     </a>
@@ -520,8 +531,9 @@
                       ">
                     <span class="left-sticker">Góp 0%, 0 phí </span>
                     <a title='MacBook Air M2 13.6" (16GB/256GB)' href="#" data-id="2370" class="img">
-                      <img alt='MacBook Air M2 13.6" (16GB/256GB)' src="./images/products/mac-air-m2-stalight-1.png"
-                        id="product-img-2370" style="max-width: 180px; max-height: 180px" />
+                      <img alt='MacBook Air M2 13.6" (16GB/256GB)'
+                        src="./assets/images/products/mac-air-m2-stalight-1.png" id="product-img-2370"
+                        style="max-width: 180px; max-height: 180px" />
                       <div class="bottom-sticker-wrapper"></div>
                     </a>
                     <h3>
@@ -580,8 +592,7 @@
             <ul>
               <li><a href="#">Thông tin các trang TMĐT </a></li>
               <li><a href="#">Chăm sóc khách hàng</a></li>
-              <li><a
-                  href="#">Dịch
+              <li><a href="#">Dịch
                   vụ sửa chữa Hoàng Hà Care</a></li>
               <li><a href="#">Khách hàng doanh nghiệp (B2B)</a></li>
               <li><a href="#">Tuyển dụng</a></li>
@@ -593,13 +604,13 @@
               <h4>Thanh toán miễn phí</h4>
               <ul class="list-logo">
                 <li>
-                  <img src="./images/footer/visa.png">
-                  <img src="./images/footer/mastercard.png">
-                  <img src="./images/footer/jcb.png">
-                  <img src="./images/footer/samsungpay.png">
-                  <img src="./images/footer/vnpay.png">
-                  <img src="./images/footer/zalopay.png">
-                  <img src="./images/footer/applepay.png">
+                  <img src="./assets/images/footer/visa.png">
+                  <img src="./assets/images/footer/mastercard.png">
+                  <img src="./assets/images/footer/jcb.png">
+                  <img src="./assets/images/footer/samsungpay.png">
+                  <img src="./assets/images/footer/vnpay.png">
+                  <img src="./assets/images/footer/zalopay.png">
+                  <img src="./assets/images/footer/applepay.png">
                 </li>
               </ul>
             </div>
@@ -608,8 +619,8 @@
               <h4>Hình thức vận chuyển</h4>
               <ul class="list-logo">
                 <li>
-                  <img src="./images/footer/nhattin.png">
-                  <img src="./images/footer/vnpost.png">
+                  <img src="./assets/images/footer/nhattin.png">
+                  <img src="./assets/images/footer/vnpost.png">
                 </li>
               </ul>
 
@@ -625,26 +636,20 @@
               <h4>Kết nối với chúng tôi</h4>
               <ul style="display: flex; gap: 10px;">
 
-                <li><a href="#" title=""
-                    class="footer-social-item"><span><img onmouseover="changesrc(this)" onmouseout="changesrc(this)"
-                        src="./images/footer/Social_fb.png"></span></a></li>
-                <li><a href="#" title=""
-                    class="footer-social-item"><span><img onmouseover="changesrc(this)" onmouseout="changesrc(this)"
-                        src="./images/footer/Social_tiktok.png"></span></a></li>
-                <li><a href="#" title=""
-                   class="footer-social-item"><span><img onmouseover="changesrc(this)"
-                        onmouseout="changesrc(this)" src="./images/footer/Social_youtube.png"></span></a></li>
-                <li><a href="#" title=""
-                    class="footer-social-item"><span><img onmouseover="changesrc(this)" onmouseout="changesrc(this)"
-                        src="./images/footer/Social_instagram.png"></span></a></li>
-                <li><a href="#" title=""
-                    class="footer-social-item"><span><img onmouseover="changesrc(this)" onmouseout="changesrc(this)"
-                        src="./images/footer/Social_thread.png"></span></a></li>
+                <li><a href="#" title="" class="footer-social-item"><span><img onmouseover="changesrc(this)"
+                        onmouseout="changesrc(this)" src="./assets/images/footer/Social_fb.png"></span></a></li>
+                <li><a href="#" title="" class="footer-social-item"><span><img onmouseover="changesrc(this)"
+                        onmouseout="changesrc(this)" src="./assets/images/footer/Social_tiktok.png"></span></a></li>
+                <li><a href="#" title="" class="footer-social-item"><span><img onmouseover="changesrc(this)"
+                        onmouseout="changesrc(this)" src="./assets/images/footer/Social_youtube.png"></span></a></li>
+                <li><a href="#" title="" class="footer-social-item"><span><img onmouseover="changesrc(this)"
+                        onmouseout="changesrc(this)" src="./assets/images/footer/Social_instagram.png"></span></a></li>
+                <li><a href="#" title="" class="footer-social-item"><span><img onmouseover="changesrc(this)"
+                        onmouseout="changesrc(this)" src="./assets/images/footer/Social_thread.png"></span></a></li>
               </ul>
             </div>
             <div class="mg-top20">
-              <a href="#"><img
-                  src="./images/footer/logo-bct.png"></a>
+              <a href="#"><img src="./assets/images/footer/logo-bct.png"></a>
             </div>
           </div>
         </div>
